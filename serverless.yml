@@ -48,10 +48,11 @@ functions:
           path: /
           method: post
           cors: true
+      - http:
           path: /{id}
           method: get
           cors: true
-     
+
 resources:
   Resources:
     DeviceTable: # Define a new DynamoDB Table resource to store items
